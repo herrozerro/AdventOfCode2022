@@ -21,11 +21,12 @@ public async Task<int> p1(bool test = false)
 {
 	var lines = await GetLinesFromFile("d02", test);
 	int score = 0;
-	Dictionary<string, int> values = new();
-	values.Add("X", 1);
-	values.Add("Y", 2);
-	values.Add("Z", 3);
-	
+
+	Dictionary<string, int> values = new() { 
+		{"X", 1}, 
+		{"Y", 2}, 
+		{"Z", 3}, 
+	};
 	
 	
 	Dictionary<string, int> scores = new();
